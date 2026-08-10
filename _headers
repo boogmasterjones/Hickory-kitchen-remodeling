@@ -1,0 +1,15 @@
+# Netlify _headers — cache long-lived static assets
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+/favicon.svg
+  Cache-Control: public, max-age=31536000, immutable
+/apple-touch-icon.png
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML: always revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate

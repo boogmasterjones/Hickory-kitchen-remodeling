@@ -1,0 +1,14 @@
+# Throwaway dependencies (regenerated only when running the dev scripts)
+node_modules/
+package.json
+package-lock.json
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+**/desktop.ini
+.claude/
+
+# Logs
+*.log

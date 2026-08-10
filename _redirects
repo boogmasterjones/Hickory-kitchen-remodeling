@@ -1,0 +1,3 @@
+# Force non-www -> www to match the canonical URLs (https://www.hickorykitchenremodel.com)
+http://hickorykitchenremodel.com/*    https://www.hickorykitchenremodel.com/:splat    301!
+https://hickorykitchenremodel.com/*   https://www.hickorykitchenremodel.com/:splat    301!

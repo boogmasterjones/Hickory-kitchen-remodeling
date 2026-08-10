@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hickory Kitchen Remodeling">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#28385a"/>
+      <stop offset="1" stop-color="#141d31"/>
+    </linearGradient>
+    <linearGradient id="br" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0a94e"/>
+      <stop offset="1" stop-color="#b07a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <!-- stylized cabinet / counter forming an H -->
+  <rect x="16" y="15" width="7" height="34" rx="2" fill="url(#br)"/>
+  <rect x="41" y="15" width="7" height="34" rx="2" fill="url(#br)"/>
+  <rect x="16" y="28" width="32" height="7" rx="2" fill="url(#br)"/>
+  <circle cx="19.5" cy="44" r="1.9" fill="#141d31"/>
+  <circle cx="44.5" cy="44" r="1.9" fill="#141d31"/>
+  <circle cx="19.5" cy="20" r="1.9" fill="#141d31"/>
+  <circle cx="44.5" cy="20" r="1.9" fill="#141d31"/>
+</svg>
