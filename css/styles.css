@@ -363,6 +363,39 @@ picture { display: contents; }
 .prose li a { text-decoration: underline; }
 
 /* ============================================================
+   BLOG
+   ============================================================ */
+.post-meta { display:flex; flex-wrap:wrap; gap:14px; align-items:center; font-size:.86rem; color: var(--ink-soft); margin: 10px 0 22px; }
+.post-meta .tag { display:inline-flex; align-items:center; gap:6px; background: var(--cream-2); border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-weight:600; color: var(--brass-deep); }
+.on-dark .post-meta { color: rgba(244,239,230,.78); }
+.on-dark .post-meta .tag { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.16); color: var(--brass-lite); }
+
+.blog-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:24px; }
+.card--media .card-cat { font-size:.72rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color: var(--brass-deep); margin-bottom:8px; display:block; }
+.card--media .card-body p { font-size:.94rem; }
+
+.prose .inline-cta {
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;
+  background: linear-gradient(160deg,#22314f,#141c2f); color:#f6f2ea;
+  border:1px solid rgba(255,255,255,.12); border-radius:16px; padding:22px 26px; box-shadow:var(--shadow-md);
+  margin: 30px 0;
+}
+.prose .inline-cta p { color: rgba(246,242,234,.85); margin:0; font-size:.98rem; }
+.prose .inline-cta strong { display:block; color:#fff; font-family:var(--font-head); font-size:1.15rem; font-weight:600; margin-bottom:4px; }
+.prose .inline-cta .btn { flex:none; }
+
+.prose blockquote {
+  margin: 24px 0; padding: 16px 22px; border-left: 4px solid var(--brass);
+  background: var(--cream-2); border-radius: 0 10px 10px 0; font-style: italic; color: var(--ink);
+}
+.prose table { width:100%; border-collapse:collapse; margin: 20px 0; font-size:.94rem; }
+.prose th, .prose td { text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); }
+.prose th { font-family:var(--font-head); font-weight:600; color:var(--ink); background:var(--cream-2); }
+
+@media (max-width: 900px) { .blog-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } .prose .inline-cta { flex-direction:column; align-items:flex-start; } .prose .inline-cta .btn { width:100%; } }
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .site-footer { background: #141b2a; color: #c7cad6; }
