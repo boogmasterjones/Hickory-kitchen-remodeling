@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hickorykitchenremodel.com/sitemap.xml
+Sitemap: https://hickorykitchenremodel.com/sitemap.xml
